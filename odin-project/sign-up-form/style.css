@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@font-face {
+  font-family: url(fonts/Norse-Bold.otf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Amarante&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+:root {
+  --button-color: #596d48;
+  --border-color: #e5e7eb;
+}
+/* lets go */
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
+.side-left {
+  background-image: url(photo/bakcground-sidebar-min.jpg);
+  width: 40%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-bg {
+  background-color: black;
+  width: 100%;
+  height: 200px;
+  opacity: 0.5;
+  position: relative;
+  top: -25%;
+}
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+
+  top: 20%;
+}
+h1 {
+  color: white;
+  font-size: 5rem;
+  order: 2;
+  font-family: "Amarante";
+  text-transform: uppercase;
+}
+img {
+  width: 100px;
+}
+
+/* right side */
+.side-right {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.area1 {
+  background-color: #f0f1efdb;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.area2 {
+  flex: 1;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: white;
+  box-shadow: 0px 13px 16px -7px rgba(0, 0, 0, 0.48);
+  padding: 3rem;
+}
+.area3 {
+  background-color: #f0f1efdb;
+  flex: 1;
+  padding: 3rem;
+}
+
+.wrapForm {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  gap: 5rem;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+input {
+  border-radius: 5px;
+  height: 35px;
+  border: 0.5px solid var(--border-color);
+  padding: 10px;
+}
+label {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 10px;
+}
+input:invalid {
+  border: 1px solid red;
+}
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0px 13px 16px -7px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 0px 13px 16px -7px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 13px 16px -7px rgba(0, 0, 0, 0.48);
+}
+
+button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  width: 250px;
+  height: 50px;
+  text-transform: capitalize;
+}
+
+.area3 p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-transform: lowercase;
+}
+span {
+  font-weight: bold;
+  color: var(--button-color);
+  cursor: pointer;
+}

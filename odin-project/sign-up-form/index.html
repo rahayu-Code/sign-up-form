@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin project - sign up form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-form">
+      <section class="side-left">
+        <div class="logo">
+          <h1>odin</h1>
+          <img src="photo/odin-lined.png" alt="" />
+        </div>
+
+        <div class="logo-bg"></div>
+      </section>
+      <section class="side-right">
+        <div class="area1">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepset dreams.
+          </p>
+          <p>Sign up <em>now</em> to get started</p>
+          <br />
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="area2">
+          <form action="#" method="post">
+            <p>Let"s do this!</p>
+            <div class="wrapForm">
+              <div class="left">
+                <label for="firstname">first name</label>
+                <input type="text" id="firstname" name="firstname" required />
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" required />
+                <label for="password">password</label>
+                <input type="password" name="password" required />
+              </div>
+              <div class="right">
+                <label for="lastname">last name</label>
+                <input type="text" id="lastname" required />
+                <label for="phonenumber">phone number</label>
+                <input type="number" name="phonenumber" required />
+                <label for="confirmpassword">confirm password</label>
+                <input
+                  type="text"
+                  name="confirmpass"
+                  id="confirmpass"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="area3">
+          <button>create account</button>
+          <p>Already have an account? <span>Log in</span></p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
